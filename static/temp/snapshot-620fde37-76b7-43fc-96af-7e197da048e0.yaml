@@ -1,0 +1,14 @@
+apiVersion: gedgemig.gedge.etri.kr/v1
+kind: Livmigration
+metadata:
+  name: checkpoint-620fde37-76b7-43fc-96af-7e197da048e0
+  namespace: migration-test
+  labels:
+    name: checkpoint-620fde37-76b7-43fc-96af-7e197da048e0
+spec:
+  replicas: 0
+  operation: checkpoint
+  snapshotPath: /mnt/migrate/gedge-cls1
+  sourcePod: podtest2
+  selector:
+    migPod:
